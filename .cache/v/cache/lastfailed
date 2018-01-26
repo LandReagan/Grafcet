@@ -1,0 +1,8 @@
+{
+  "src/test_case.py": true,
+  "src/tests/test_grafcet_app.py": true,
+  "tests/test_case.py::TestApp": true,
+  "tests/test_case.py::TestDessin": true,
+  "tests/test_diagramme.py": true,
+  "tests/test_etape.py::TestEtape::()::test_etape_deXml": true
+}

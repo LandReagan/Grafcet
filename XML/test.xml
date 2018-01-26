@@ -1,0 +1,35 @@
+<Diagramme>
+
+<Etapes>
+<Etape X="2" Y="4" active="False" initiale="False" numero="70"></Etape>
+<Etape X="3" Y="2" active="False" initiale="False" numero="50"></Etape>
+<Etape X="3" Y="0" active="False" initiale="False" numero="40"></Etape>
+<Etape X="2" Y="6" active="False" initiale="False" numero="80"></Etape>
+<Etape X="4" Y="2" active="True" initiale="True" numero="60"></Etape>
+<Etape X="0" Y="0" active="False" initiale="True" numero="10"></Etape>
+<Etape X="1" Y="2" active="True" initiale="False" numero="30"></Etape>
+<Etape X="0" Y="2" active="True" initiale="False" numero="20"></Etape>
+</Etapes>
+
+<Transitions>
+<Transition X="0" Y="1" condition="True" numero="11"></Transition>
+<Transition X="2" Y="5" condition="False" numero="71"></Transition>
+<Transition X="2" Y="7" condition="False" numero="81"></Transition>
+<Transition X="2" Y="3" condition="False" numero="21"></Transition>
+<Transition X="3" Y="1" condition="False" numero="41"></Transition>
+</Transitions>
+
+<Liaisons>
+<Liaison X="3" Y="1" amont="True" etapes="40," numero="4" synchronisee="False" transition="41"></Liaison>
+<Liaison X="2" Y="3" amont="True" etapes="50,60," numero="6" synchronisee="True" transition="21"></Liaison>
+<Liaison X="0" Y="1" amont="False" etapes="20,30," numero="2" synchronisee="True" transition="11"></Liaison>
+<Liaison X="3" Y="1" amont="False" etapes="50," numero="5" synchronisee="False" transition="41"></Liaison>
+<Liaison X="2" Y="5" amont="True" etapes="70," numero="8" synchronisee="False" transition="71"></Liaison>
+<Liaison X="0" Y="1" amont="True" etapes="10," numero="1" synchronisee="False" transition="11"></Liaison>
+<Liaison X="2" Y="3" amont="False" etapes="70," numero="7" synchronisee="False" transition="21"></Liaison>
+<Liaison X="5" Y="2" amont="False" etapes="40," numero="11" synchronisee="False" transition="81"></Liaison>
+<Liaison X="2" Y="5" amont="False" etapes="80," numero="9" synchronisee="False" transition="71"></Liaison>
+<Liaison X="2" Y="3" amont="True" etapes="20,30," numero="3" synchronisee="True" transition="21"></Liaison>
+<Liaison X="2" Y="7" amont="True" etapes="80," numero="10" synchronisee="False" transition="81"></Liaison>
+</Liaisons>
+</Diagramme>

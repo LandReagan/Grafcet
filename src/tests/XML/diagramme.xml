@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<Diagramme>
+	<Etapes>
+		<Etape X="0" Y="0" active="False" initiale="True" numero="10"></Etape>
+		<Etape X="0" Y="2" active="False" initiale="False" numero="20"></Etape>
+		<Etape X="1" Y="2" active="False" initiale="False" numero="30"></Etape>
+		<Etape X="3" Y="0" active="False" initiale="False" numero="40"></Etape>
+		<Etape X="3" Y="2" active="False" initiale="False" numero="50"></Etape>
+		<Etape X="4" Y="2" active="False" initiale="True" numero="60"></Etape>
+		<Etape X="2" Y="4" active="False" initiale="False" numero="70"></Etape>
+		<Etape X="2" Y="6" active="False" initiale="False" numero="80"></Etape>
+	</Etapes>
+
+	<Transitions>
+		<Transition X="0" Y="1" numero="11" condition="False"></Transition>
+		<Transition X="2" Y="3" numero="21" condition="False"></Transition>
+		<Transition X="3" Y="1" numero="41" condition="False"></Transition>
+		<Transition X="2" Y="5" numero="71" condition="False"></Transition>
+		<Transition X="2" Y="7" numero="81" condition="False"></Transition>
+	</Transitions>
+
+	<Liaisons>
+		<Liaison X="0" Y="0" etapes="10" transition="11" amont="True"></Liaison>
+		<Liaison X="0" Y="0" etapes="20,30" transition="11" amont="False"></Liaison>
+		<Liaison X="0" Y="0" etapes="20,30" transition="21" amont="True"></Liaison>
+		<Liaison X="0" Y="0" etapes="40" transition="41" amont="True"></Liaison>
+		<Liaison X="0" Y="0" etapes="50" transition="41" amont="False"></Liaison>
+		<Liaison X="0" Y="0" etapes="50,60" transition="21" amont="True"></Liaison>
+		<Liaison X="0" Y="0" etapes="70" transition="21" amont="False"></Liaison>
+		<Liaison X="0" Y="0" etapes="70" transition="71" amont="True"></Liaison>
+		<Liaison X="0" Y="0" etapes="80" transition="71" amont="False"></Liaison>
+		<Liaison X="0" Y="0" etapes="80" transition="81" amont="True"></Liaison>
+		<Liaison X="5" Y="2" etapes="40" transition="81" amont="False"></Liaison>
+	</Liaisons>
+
+</Diagramme>

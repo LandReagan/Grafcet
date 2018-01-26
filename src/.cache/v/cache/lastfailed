@@ -1,0 +1,11 @@
+{
+  "tests/test_diagramme.py": true,
+  "tests/test_diagramme.py::TestDiagramme::()": true,
+  "tests/test_diagramme.py::TestDiagramme::()::testDiagrammeCharge": true,
+  "tests/test_element.py::TestElement::()::testElementConstruit": true,
+  "tests/test_element.py::TestElement::()::testElementVide": true,
+  "tests/test_etape.py::TestEtape::()::testEtapeActivation": true,
+  "tests/test_etape.py::TestEtape::()::testEtapeVide": true,
+  "tests/test_liaison.py::TestLiaison::()::testLiaisonVide": true,
+  "tests/test_transition.py::TestTransition::()::testTransitionVide": true
+}

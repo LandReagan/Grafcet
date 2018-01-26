@@ -1,0 +1,62 @@
+#:kivy 1.0
+
+
+<ZoneDessin>:
+    on_colonnes: self.reDessiner()
+    on_lignes: self.reDessiner()
+    largeur_zone: self.colonnes * self.largeur_case
+    hauteur_zone: self.lignes * self.largeur_case
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1  # blanc
+        Rectangle:
+            pos: root.pos
+            size: root.size
+
+<ZoneControle>:
+    orientation: 'vertical'
+    Button:
+        text: 'DEBUG - TESTS !'
+        on_press: root.lancerTests()
+    Label:
+        text: "Modes :"
+    BoxLayout:
+        orientation: 'horizontal'
+        ToggleButton:
+            state: 'down'
+            group: 'Modes'
+            text: root.text_edition
+            on_press: root.modeEdition()
+        ToggleButton:
+            group: 'Modes'
+            text: "Simulation"
+            on_press: root.modeSimulation()
+        ToggleButton:
+            group: 'Modes'
+            text: "Marche"
+            on_press: root.modeMarche()
+    Label:
+        text: 'Diagramme :'
+    Button:
+        text: "Grille"
+        on_press: root.grilleOnOff()
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            text: "Ajouter Colonne"
+            on_press: root.ajouterColonne()
+        Button:
+            text: "Ajouter ligne"
+            on_press: root.ajouterLigne()
+
+<GUI>:
+    zone_dessin: zone_dessin
+    zone_controle: zone_controle
+    orientation: 'horizontal'
+    ZoneDessin:
+        id: zone_dessin
+
+    ZoneControle:
+        id: zone_controle
+        zone_dessin: zone_dessin
+        size_hint_x: 0.3
